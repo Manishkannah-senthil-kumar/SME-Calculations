@@ -14,11 +14,11 @@ public class ExportDataToExcel2 {
         String dbURL = "jdbc:mysql://aura-uat.cwfjz6cyloxy.me-south-1.rds.amazonaws.com:3306";
         String dbUsername = "admin";
         String dbPassword = "zFs4upwKvvpRbbXcKSTf8La3MP4ymd";
-        String query = "SELECT * FROM 7001_group_medical_qic_transactions.premium WHERE plan_id=665 AND status=1;";
+        String query1 = "SELECT * FROM 7001_group_medical_qic_transactions.benefits_table WHERE client_reference_number LIKE '%QIC-SME-FREEZONE-0125-1-00028%';";
 
         // Excel file details
         String excelFilePath = "D:\\eclipse workspace\\SME-Calculations\\target\\PremiumCalculator\\Book1.xlsx";
-        int targetSheetIndex = 0; // The index of the sheet where data will be written
+        int targetSheetIndex = 1; // The index of the sheet where data will be written
 
         Connection connection = null;
 
@@ -31,7 +31,7 @@ public class ExportDataToExcel2 {
 
             // Execute the query
             Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(query);
+            ResultSet resultSet = statement.executeQuery(query1);
 
             // Load the Excel workbook
             FileInputStream fileInputStream = new FileInputStream(excelFilePath);
