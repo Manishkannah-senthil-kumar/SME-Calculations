@@ -146,6 +146,8 @@ public class ExportDataToExcel3 {
             }
 
             System.out.println("Data from query written to Sheet " + (sheetIndex + 1));
+            
+            
 
         } catch (SQLException | NullPointerException e) {
             System.out.println("Error writing data to Excel sheet: " + e.getMessage());
