@@ -1,11 +1,10 @@
 package qicPages;
 
-import java.io.*;
-import java.sql.*;
-import java.sql.Date;
-import java.util.*;
-import org.apache.poi.ss.usermodel.*;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class ExportDataToExcel {
 	
@@ -14,7 +13,7 @@ public class ExportDataToExcel {
         String dbURL = "jdbc:mysql://aura-uat.cwfjz6cyloxy.me-south-1.rds.amazonaws.com:3306";
         String dbUsername = "admin";
         String dbPassword = "zFs4upwKvvpRbbXcKSTf8La3MP4ymd";
-
+// Test
         // Query to fetch data
         String query = "SELECT * FROM 7001_group_medical_qic_transactions.premium WHERE plan_id=665 AND status=1;";
 
