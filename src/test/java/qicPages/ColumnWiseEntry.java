@@ -14,6 +14,9 @@ public class ColumnWiseEntry {
         String dbURL = "jdbc:mysql://aura-uat.cwfjz6cyloxy.me-south-1.rds.amazonaws.com:3306";
         String dbUsername = "admin";
         String dbPassword = "zFs4upwKvvpRbbXcKSTf8La3MP4ymd";
+        
+        
+        
 
         // Queries to execute
         String query1 = "SELECT * FROM 7001_group_medical_qic_transactions.premium WHERE plan_id=665 AND status=1;";
