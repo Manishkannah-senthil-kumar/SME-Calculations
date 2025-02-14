@@ -13,7 +13,7 @@ public class OLDCALC {
         String dbUsername = "admin";
         String dbPassword = "zFs4upwKvvpRbbXcKSTf8La3MP4ymd";
         
-        // Queries to execute
+        // Queries to execute yesy
         String[] queries = {
             "SELECT * FROM 7001_group_medical_qic_transactions.premium WHERE plan_id=666 AND status=1;",
             "SELECT * FROM 7001_group_medical_qic_transactions.benefits_table WHERE client_reference_number LIKE '%QIC-SME-FREEZONE-0125-1-00028%';",
@@ -29,7 +29,7 @@ public class OLDCALC {
         Connection connection = null;
         
         try {
-            // Load MySQL JDBC Driver
+            // Load MySQL JDBC driver
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             // Establish connection
