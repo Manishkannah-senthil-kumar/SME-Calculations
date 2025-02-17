@@ -23,7 +23,7 @@ public class OLDCALC {
             "SELECT insurer_fee, tpa_fee, aura_commission, distributor_commission, member_type, total FROM 7001_group_medical_qic_transactions.ceding_commission WHERE plan_id=665;"
         };
 
-        // Excel file path to 
+        // Excel file path
         String excelFilePath = "D:\\eclipse workspace\\SME-Calculations\\target\\PremiumCalculator\\Master Piece  new.xlsx";
         
         Connection connection = null;
